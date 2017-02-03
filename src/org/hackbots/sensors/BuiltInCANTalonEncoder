@@ -1,0 +1,19 @@
+package org.fpsrobotics.sensors;
+
+import org.fpsrobotics.PID.IPIDFeedbackDevice;
+
+import edu.wpi.first.wpilibj.CANTalon;
+import edu.wpi.first.wpilibj.CANTalon.FeedbackDevice;
+
+public class BuiltInCANTalonEncoder implements IEncoder{
+
+    CANTalon canMotor;
+    
+    public BuiltInCANTalonEncoder (CANTalon canMotor)
+    {
+        this.canMotor = canMotor;
+    }
+    
+    @Override
+    public double
+    
